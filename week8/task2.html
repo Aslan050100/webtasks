@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <style>
+
+      #cards .card{
+
+        border:1px solid red;
+
+        display:flex;
+
+        width:300px;
+
+      }
+
+      #cards .card .title{
+
+        flex-grow: 1;
+
+      }
+
+      #cards .card .price{
+
+        font-weight: bold;
+
+        padding-right: 20px;
+
+      }
+
+      #loading{
+
+        display: none;
+
+      }
+
+      #cards{
+
+        width:300px;
+
+        height:200px;
+
+        border: 1px solid blue;
+
+      }
+
+    </style>
+
+    <script src="script2.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <button value='http://demo4296963.mockable.io/listCars' onClick='onClick(value)'>Load</button>
+
+    <div id="cards">
+
+      <img width="300px" height="200px" id="loading" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"/>
+
+    </div>
+
+  </body>
+
+</html>
